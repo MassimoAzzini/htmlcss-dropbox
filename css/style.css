@@ -397,11 +397,12 @@ a.partner-link {
 }
 
 .cont50-right {
+  padding-top: 10px;
   text-align: right;
 }
 
 div.bring-to {
-  height: 30vh;
+  height: 40vh;
   align-items: center;
 }
 
@@ -419,3 +420,17 @@ div.bring-to {
 .cont50-left h2 {
   color: #61082b;
 }
+
+div.question-1 {
+  cursor: pointer;
+}
+
+.accordion p.answer-1 {
+  display: none;
+}
+
+.accordion .question-1:hover p.answer-1{
+  display: block;
+}
+
+<i class="fa-solid fa-chevron-down"></i>
