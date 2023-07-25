@@ -14,10 +14,6 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-header {
-  background-color: var(--lightblue);
-}
-
 h2 {
   font-size: 2.4rem;
   font-weight: 800;
@@ -30,6 +26,18 @@ h3 {
 
 ul {
   list-style: none;
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.back-light-blue {
+  background-color: var(--lightblue);
 }
 
 .d-flex {
@@ -164,13 +172,6 @@ header .container {
   margin-right: 30px;
 }
 
-.blue {
-  color: var(--blue);
-}
-
-.grey {
-  color: var(--grey);
-}
 /* BUSINESS */
 .row-business,
 .row-operations {
@@ -377,10 +378,6 @@ a.partner-link {
   margin: 40px 0;
 }
 
-.designit-det {
-  display: none;
-}
-
 .designit:hover,
 .asu:hover,
 .uf:hover,
@@ -390,10 +387,35 @@ a.partner-link {
 .lonely:hover,
 .clear-channel:hover {
   border-style: inset;
-  border: 15px solid #d0e9cd;
+  border: 15px solid rgba(255, 255, 255, 0.5);
   opacity: 0.7;
 }
 
-.designit:active .designit-det {
-  display: block;
+.cont50-left,
+.cont50-right {
+  width: 50%;
+}
+
+.cont50-right {
+  text-align: right;
+}
+
+div.bring-to {
+  height: 30vh;
+  align-items: center;
+}
+
+.bring-to.container-small {
+  justify-content: space-between;
+}
+
+.cont50-right a {
+  text-decoration: none;
+  padding: 10px 40px;
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.cont50-left h2 {
+  color: #61082b;
 }
