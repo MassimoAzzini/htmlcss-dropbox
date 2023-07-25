@@ -60,11 +60,7 @@ ul {
   text-decoration: none;  
 }
 
-
-
-/* FIXME:: da verificare il bottone header */
-.btn-blue:hover {
-  border: none;
+.btn-blue:hover{
   filter: brightness(150%);
 }
 
@@ -294,6 +290,12 @@ a.partner-link {
   margin-top: 20px;
 }
 
+a.partner-link:hover,
+.other-partner-link:hover {
+  opacity: 0.5;
+}
+
+
 .clm-operations p {
   margin-top: 30px;
 }
@@ -446,22 +448,37 @@ div.cont-question {
   flex-basis: 90%;
 }
 
-.accordion .icon {
+.accordion .cont-question i {
   flex-basis: 10%;
   text-align: right;
+  transition: all 0.5s ease;
 }
 
-.accordion p {
+.accordion .cont-question p {
   margin-top: 30px;
 }
 
-.accordion p.answer {
+.accordion .cont-question p.answer {
   display: none;
 }
 
 .accordion .cont-question:hover p.answer {
   display: block;
+  animation: fade-in 1s;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+
 .accordion .cont-question:hover i {
   transform: rotate(180deg);
 }
@@ -469,7 +486,6 @@ div.cont-question {
 
 
 
-/* <i class="fa-solid fa-chevron-down"></i> */
 
 footer {
   background-color: black;
@@ -492,4 +508,11 @@ footer ul {
 
 footer li {
   margin-bottom: 15px;
+}
+
+footer .language {
+  width: 120px;
+  border-top: 1px solid white;
+  padding: 40px 0;
+  color: #969696;
 }
