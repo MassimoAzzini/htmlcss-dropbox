@@ -294,3 +294,22 @@ a.partner-link {
   display: block;
   margin-top: 40px;
 }
+
+.accordion {
+  width: 100%;
+}
+
+.quadrato-grande {
+  flex-wrap: wrap;
+  width: calc(100% / 3);
+  height: calc(100vw / 3 - 20px);
+  background-color: red;
+  border: 1px solid black;
+}
+
+.quadrato-piccolo {
+  width: calc(100% / 2);
+  height: calc(100% / 2);
+  background-color: aquamarine;
+  border: 1px dotted black;
+}
