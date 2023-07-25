@@ -97,7 +97,7 @@ header li a {
 }
 
 header li a:hover {
-  padding: 29px 0;
+  padding: 30px 0;
   border-bottom: 2px solid black;
 }
 
@@ -421,16 +421,50 @@ div.bring-to {
   color: #61082b;
 }
 
-div.question-1 {
-  cursor: pointer;
+.accordion h2 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--grey);
+
 }
 
-.accordion p.answer-1 {
+div.cont-question {
+  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--grey);
+}
+
+.accordion .question {
+  flex-basis: 90%;
+}
+
+.accordion .icon {
+  flex-basis: 10%;
+  text-align: right;
+}
+
+.accordion p {
+  margin-top: 30px;
+}
+
+.accordion p.answer {
   display: none;
 }
 
-.accordion .question-1:hover p.answer-1{
+.accordion .cont-question:hover p.answer {
   display: block;
 }
+.accordion .cont-question:hover i {
+  transform: rotate(180deg);
+}
 
-<i class="fa-solid fa-chevron-down"></i>
+
+
+
+/* <i class="fa-solid fa-chevron-down"></i> */
+
+footer {
+  height: 500px;
+  background-color: black;
+}
