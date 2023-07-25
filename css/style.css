@@ -472,6 +472,24 @@ div.cont-question {
 /* <i class="fa-solid fa-chevron-down"></i> */
 
 footer {
-  height: 500px;
   background-color: black;
+  color: white;
+}
+
+.footer-top {
+  justify-content: space-between;
+  padding: 90px 0;
+}
+
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul {
+  margin-top: 30px;
+}
+
+footer li {
+  margin-bottom: 15px;
 }
