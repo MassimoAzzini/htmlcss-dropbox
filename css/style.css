@@ -20,8 +20,13 @@ header {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2.3rem;
   font-weight: 800;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 ul {
@@ -51,9 +56,8 @@ ul {
 
 
 
-/* FIXME:: da verificare */
+/* FIXME:: da verificare il bottone header */
 .btn-blue:hover {
-  padding: 5px 10px;
   border: none;
   filter: brightness(150%);
 }
@@ -145,7 +149,6 @@ header .container {
 /* fine JUMBOTRON */
 
 /* MAIN */
-
 .piano-business h2,
 .piano-business .fatturazione {
   margin-bottom: 50px;
@@ -167,15 +170,27 @@ i.grey {
   justify-content: space-between;
 }
 
-.clm-business {
+.clm-business,
+.team-clm-right {
   max-width: 250px;
   width: calc(100% / 3);
+}
+
+.row-team {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.clm-business,
+.row-team {
   border: 1px solid var(--grey);
   font-size: 0.8rem;
 }
 
-.clm-business .abbonamento {
+.clm-business .abbonamento,
+.row-team .abbonamento {
   text-align: center;
+  font-weight: bold;
   line-height: 35px;
   border-bottom: 1px solid var(--grey);
 }
@@ -191,20 +206,19 @@ i.grey {
 }
 
 .descrizione-abb ul {
-  margin: 20px 15px;
+  margin: 30px 15px;
 }
 
 .descrizione-abb li{
   margin: 20px 0;
 }
 
-.btn-abb {
+.btn-abb a{
   text-align: center;
-  margin-bottom: 30px;
-}
-
-.descrizione-abb a.btn-blue {
-  padding: 10px 30px;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin: 40px 0;
 }
 
 span.bord-bottom {
@@ -219,4 +233,19 @@ span.bord-bottom {
 .descrizione-abb .fa-check {
   color: var(--blue);
 }
+
+ul.fa-ul li {
+  line-height: 16px;
+}
+
+.team-descr {
+  display: block;
+  padding-top: 30px;
+}
+
+.team-clm-right {
+  text-align: right;
+  padding-top: 20px;
+}
 /* fine BUSINESS */
+
