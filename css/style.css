@@ -357,7 +357,9 @@ a.partner-link {
 }
 
 .central-box {
+  height: 100%;
   padding: 40px;
+  overflow: auto;
 }
 
 .central-box img {
@@ -379,7 +381,14 @@ a.partner-link {
   display: none;
 }
 
-.designit:hover {
+.designit:hover,
+.asu:hover,
+.uf:hover,
+.topps:hover,
+.wbr:hover,
+.hearst:hover,
+.lonely:hover,
+.clear-channel:hover {
   border-style: inset;
   border: 15px solid #d0e9cd;
   opacity: 0.7;
