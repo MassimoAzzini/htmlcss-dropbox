@@ -70,6 +70,10 @@ ul {
   margin: 100px auto;
 }
 
+.block {
+  display: block;
+}
+
 /* HEADER */
 header li a {
   text-decoration: none;
@@ -186,17 +190,12 @@ i.grey {
   margin: 10px 0;
 }
 
-
-.descrizione-abb span{
-  display: block;
-}
-
-.descrizione-abb ul{
-  margin: 40px 15px;
+.descrizione-abb ul {
+  margin: 20px 15px;
 }
 
 .descrizione-abb li{
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .btn-abb {
@@ -209,8 +208,15 @@ i.grey {
 }
 
 span.bord-bottom {
+  padding-bottom: 30px;
   border-bottom: 1px solid var(--grey);
 }
 
+.descrizione-abb span.p-salienti {
+  margin-top: 60px;
+}
 
+.descrizione-abb .fa-check {
+  color: var(--blue);
+}
 /* fine BUSINESS */
