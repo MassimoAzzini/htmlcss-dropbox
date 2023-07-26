@@ -319,6 +319,7 @@ a.partner-link:hover,
   cursor: pointer;
   width: calc(100% / 2);
   height: calc(100% / 2);
+  padding: 50px;
   /* transition: all 0.2s linear; */
 }
 
@@ -326,13 +327,13 @@ a.partner-link:hover,
   object-fit: contain;
   width: 100%;
   height: 100%;
-  padding: 50px;
+  /* padding: 50px; */
   filter: invert(1);
 }
 .small-square svg {
   width: 100%;
   height: 100%;
-  padding: 50px;
+  /* padding: 50px; */
   fill: white;
 }
 
@@ -340,11 +341,12 @@ a.partner-link:hover,
 .small-square.active {
   border-style: inset;
   border: 15px solid rgba(255, 255, 255, 0.3);
+  padding: 35px;
+
 }
 
 .small-square:hover img,
 .small-square.active img{
-  padding: 35px;
 }
 
 
