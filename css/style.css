@@ -323,6 +323,7 @@ a.partner-link:hover,
   cursor: pointer;
   width: calc(100% / 2);
   height: calc(100% / 2);
+  /* padding: 10%; */
   /* transition: all 0.2s linear; */
 }
 
@@ -333,7 +334,7 @@ a.partner-link:hover,
 
 .small-square svg {
   max-width: 70%;
-  height: auto;
+  /* height: auto; */
 }
 
 .small-square div.overlay {
