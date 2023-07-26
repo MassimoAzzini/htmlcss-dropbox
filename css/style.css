@@ -88,13 +88,13 @@ ul {
 header .container li a {
   text-decoration: none;
   vertical-align: middle;
+  padding: 28px 0;
   margin: 0 10px;
   font-size: 0.9rem;
   color: black;
 }
 
 header li a:hover {
-  padding: 30px 0;
   border-bottom: 2px solid black;
 }
 
