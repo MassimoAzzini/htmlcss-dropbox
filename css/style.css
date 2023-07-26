@@ -326,15 +326,27 @@ a.partner-link:hover,
   object-fit: contain;
   width: 100%;
   height: 100%;
-  padding: 60px;
+  padding: 50px;
   filter: invert(1);
 }
 .small-square svg {
   width: 100%;
   height: 100%;
-  padding: 60px;
+  padding: 50px;
   fill: white;
 }
+
+.small-square:hover,
+.small-square.active {
+  border-style: inset;
+  border: 15px solid rgba(255, 255, 255, 0.3);
+}
+
+.small-square:hover img,
+.small-square.active img{
+  padding: 35px;
+}
+
 
 .designit {
   background-color: #77ce6b;
@@ -394,12 +406,6 @@ a.partner-link:hover,
   margin: 40px 0;
 }
 
-.small-square:hover,
-.small-square.active {
-  padding: ;
-  border-style: inset;
-  border: 15px solid rgba(255, 255, 255, 0.3);
-}
 
 .cont50-left,
 .cont50-right {
