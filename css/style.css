@@ -319,7 +319,7 @@ a.partner-link:hover,
   cursor: pointer;
   width: calc(100% / 2);
   height: calc(100% / 2);
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
 }
 
 .small-square img {
