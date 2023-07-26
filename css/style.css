@@ -52,6 +52,10 @@ ul {
   position: relative;
 }
 
+.p-absolute {
+  position: absolute;
+}
+
 .btn-blue {
   background-color: var(--blue);
   padding: 10px 20px;
@@ -319,30 +323,37 @@ a.partner-link:hover,
   cursor: pointer;
   width: calc(100% / 2);
   height: calc(100% / 2);
-  padding: 50px;
+  padding: 10%;
   /* transition: all 0.2s linear; */
 }
 
-.small-square img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  /* padding: 50px; */
-  filter: invert(1);
-}
+.small-square div.overlay,
+.small-square img,
 .small-square svg {
   width: 100%;
   height: 100%;
-  /* padding: 50px; */
+}
+
+.small-square div.overlay {
+  border-style: inset;
+  border: 15px solid rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+
+/* .small-square img {
+  object-fit: contain;
+  filter: invert(1);
+} */
+
+.small-square svg {
   fill: white;
 }
 
-.small-square:hover,
-.small-square.active {
-  border-style: inset;
-  border: 15px solid rgba(255, 255, 255, 0.3);
-  padding: 35px;
-
+.small-square:hover div.overlay,
+.small-square.active div.overlay{
+  opacity: 1;
 }
 
 .small-square:hover img,
