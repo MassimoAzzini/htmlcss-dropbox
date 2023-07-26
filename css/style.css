@@ -12,6 +12,7 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -56,12 +57,17 @@ ul {
   position: absolute;
 }
 
+.block {
+  display: block;
+}
+
 .btn-blue {
   background-color: var(--blue);
   padding: 10px 20px;
   color: white;
   border: none;
-  text-decoration: none;  
+  text-decoration: none; 
+  transition: all 0.3s linear; 
 }
 
 .btn-blue:hover{
@@ -82,10 +88,6 @@ ul {
 
 .container-small section {
   margin: 100px 0;
-}
-
-.block {
-  display: block;
 }
 
 /* HEADER */
@@ -265,6 +267,7 @@ ul.fa-ul li {
 }
 /* fine BUSINESS */
 
+/* PARTNER */
 .partner-img,
 .user {
   width: 60%;
@@ -278,7 +281,6 @@ ul.fa-ul li {
 .partner-descr p{
   margin-top: 20px;
 }
-
 
 .partner-img img,
 .clm-operations img {
@@ -296,20 +298,29 @@ a.partner-link {
 
 a.partner-link:hover,
 .other-partner-link:hover {
-  opacity: 0.5;
+  transition: all 0.2s linear;
 }
 
+a.partner-link:hover,
+.other-partner-link:hover {
+  background-color: var(--blue);
+  filter: brightness(150%);
+}
+/* fine PARTNER */
 
+/* OPERATIONS */
 .clm-operations p {
   margin-top: 30px;
 }
+/* fine OPERATIONS */
 
 .user a {
   display: block;
   margin-top: 40px;
 }
 
-.accordion {
+/* ALTRI PARTNER */
+.other-partner {
   width: 100%;
 }
 
@@ -323,8 +334,6 @@ a.partner-link:hover,
   cursor: pointer;
   width: calc(100% / 2);
   height: calc(100% / 2);
-  /* padding: 10%; */
-  /* transition: all 0.2s linear; */
 }
 
 .small-square div.overlay {
@@ -334,7 +343,6 @@ a.partner-link:hover,
 
 .small-square svg {
   max-width: 70%;
-  /* height: auto; */
 }
 
 .small-square div.overlay {
@@ -357,7 +365,7 @@ a.partner-link:hover,
 }
 
 .small-square:hover div.overlay,
-.small-square.active div.overlay{
+.small-square.active div.overlay {
   opacity: 1;
 }
 
@@ -419,7 +427,6 @@ a.partner-link:hover,
   margin: 40px 0;
 }
 
-
 .cont50-left,
 .cont50-right {
   width: 50%;
@@ -449,11 +456,12 @@ div.bring-to {
 .cont50-left h2 {
   color: #61082b;
 }
+/* fine ALTRI PARTNER */
 
+/* ACCORDION */
 .accordion h2 {
   padding-bottom: 30px;
   border-bottom: 1px solid var(--grey);
-
 }
 
 div.cont-question {
@@ -500,6 +508,7 @@ div.cont-question {
 .accordion .cont-question:hover i {
   transform: rotate(180deg);
 }
+/* fine ACCORDION */
 
 /* FOOTER */
 footer {
