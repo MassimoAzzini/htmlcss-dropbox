@@ -319,6 +319,7 @@ a.partner-link:hover,
   cursor: pointer;
   width: calc(100% / 2);
   height: calc(100% / 2);
+  transition: all 0.2s linear;
 }
 
 .small-square img {
@@ -327,6 +328,12 @@ a.partner-link:hover,
   height: 100%;
   padding: 60px;
   filter: invert(1);
+}
+.small-square svg {
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  fill: white;
 }
 
 .designit {
@@ -389,6 +396,7 @@ a.partner-link:hover,
 
 .small-square:hover,
 .small-square.active {
+  padding: ;
   border-style: inset;
   border: 15px solid rgba(255, 255, 255, 0.3);
 }
@@ -444,7 +452,7 @@ div.cont-question {
 .accordion .cont-question i {
   flex-basis: 10%;
   text-align: right;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
 .accordion .cont-question p {
