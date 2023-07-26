@@ -387,17 +387,10 @@ a.partner-link:hover,
   margin: 40px 0;
 }
 
-.designit:hover,
-.asu:hover,
-.uf:hover,
-.topps:hover,
-.wbr:hover,
-.hearst:hover,
-.lonely:hover,
-.clear-channel:hover {
+.small-square:hover,
+.small-square.active {
   border-style: inset;
-  border: 15px solid rgba(255, 255, 255, 0.5);
-  opacity: 0.7;
+  border: 15px solid rgba(255, 255, 255, 0.3);
 }
 
 .cont50-left,
@@ -475,18 +468,13 @@ div.cont-question {
   100% {
     opacity: 1;
   }
-  
 }
-
 
 .accordion .cont-question:hover i {
   transform: rotate(180deg);
 }
 
-
-
-
-
+/* FOOTER */
 footer {
   background-color: black;
   color: white;
