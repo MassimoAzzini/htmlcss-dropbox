@@ -330,7 +330,7 @@ a.partner-link:hover,
 .small-square div.overlay,
 .small-square svg {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .small-square div.overlay {
