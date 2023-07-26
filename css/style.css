@@ -323,7 +323,6 @@ a.partner-link:hover,
   cursor: pointer;
   width: calc(100% / 2);
   height: calc(100% / 2);
-  padding: 10%;
   /* transition: all 0.2s linear; */
 }
 
@@ -333,7 +332,7 @@ a.partner-link:hover,
 }
 
 .small-square svg {
-  width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -352,7 +351,7 @@ a.partner-link:hover,
   align-items: center;
 }
 
-.small-square svg {
+.small-square svg * {
   fill: white;
 }
 
